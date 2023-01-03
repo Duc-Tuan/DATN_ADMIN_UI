@@ -1,0 +1,65 @@
+.wapper {
+  background: var(--bg-body);
+  color: var(--bg-white);
+  min-height: 100vh;
+  .sliderba {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    width: 240px;
+    height: 90vh;
+    box-shadow: 1px 1px 4px var(--bg-white);
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    padding: 20px;
+  }
+  .content {
+    flex: 1;
+    margin-left: 280px;
+    margin-right: 35px;
+    margin-top: 35px;
+    .header {
+      position: fixed;
+      left: 280px;
+      right: 35px;
+      backdrop-filter: blur(10px);
+      z-index: 10000;
+    }
+    .header,
+    .children {
+      padding: 20px;
+      box-shadow: 1px 1px 4px var(--bg-white);
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+    .children {
+      margin-top: 90px;
+    }
+  }
+  .menuSetting {
+    position: fixed;
+    top: 0;
+    right: -250%;
+    transition: 0.6s;
+    background: var(--bg-body);
+    box-shadow: 1px 1px 4px var(--bg-white);
+    &.active {
+      right: 0;
+      transition: 0.4s;
+      z-index: 100;
+    }
+  }
+  .setting {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    filter: opacity(0.8);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .wapper {
+  }
+}

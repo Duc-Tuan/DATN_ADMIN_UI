@@ -1,0 +1,17 @@
+.wapper {
+  .logo{
+    width: 80px;
+  }
+  .info {
+    .btnReturn {
+      margin-left: 10px;
+      background: var(--bg-button-menu);
+      box-shadow: 1px 1px 4px var(--bg-white);
+      border-radius: 6px;
+      button{
+        padding: 4px 10px;
+        color: var(--bg-white);
+      }
+    }
+  }
+}

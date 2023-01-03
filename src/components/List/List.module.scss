@@ -1,0 +1,26 @@
+.wapper {
+  .title {
+    .sub {
+      flex: 1;
+      .name__title {
+        padding: 10px 0;
+        flex: 1;
+        text-align: center;
+        border: 1px solid var(--bg-white);
+      }
+    }
+
+    .index,
+    .job {
+      padding: 10px 0;
+      border: 1px solid var(--bg-white);
+      width: 100px;
+      text-align: center;
+    }
+    .index {
+      width: 60px;
+    }
+  }
+  .content {
+  }
+}

@@ -1,0 +1,24 @@
+.wapper {
+  .header {
+    .Links {
+      a {
+        &:hover {
+          color: var(--bg-primary) !important;
+        }
+      }
+    }
+    .right {
+      .create {
+        margin-left: 10px;
+        width: 32px;
+        height: 32px;
+        background: var(--bg-button-menu);
+        box-shadow: 1px 1px 4px var(--bg-white);
+        border-radius: 4px;
+        svg {
+          color: var(--bg-white);
+        }
+      }
+    }
+  }
+}
